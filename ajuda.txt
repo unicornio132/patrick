@@ -1,0 +1,10 @@
+apt-get update
+apt-get install default-jdk
+mkdir /opt/spark
+cd /opt/spark
+wget http://d3kbcqa49mib13.cloudfront.net/spark-2.1.0-bin-hadoop2.7.tgz
+tar -zxvf spark-2.1.0-bin-hadoop2.7.tgz
+cd spark-2.1.0-bin-hadoop2.7/bin
+./spark-shell --master locate[2]
+
+
